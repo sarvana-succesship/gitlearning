@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Succesship</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-section">
+            <img class="logo1" src="Images/Succesship Logo.png" alt="Succesship Logo" />
+            <img class="logo2" src="Images/Nivea_Logo.png" alt="Nivea Logo" />
+        </div>
+        <div class="header-right">
+            <a href="#"><img src="icons/calendar-minus.png" alt="" />Support</a>
+            <div class="divider"></div>
+            <a href="#"><img src="icons/envelope.png" alt="" />Mail</a>
+            <div class="divider"></div>
+            <a href="#"><img src="icons/whatsapp.png" alt="" />Whatsapp</a>
+            <div class="divider"></div>
+            <div class="user-details">
+                <span>NA</span>
+                <div class="username">
+                    <div id="un">Nivea Admin</div>
+                    <div>Enterprise Name: NIVEA</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <ul class="sidebar-menu">
+            <li><img src="icons/sider-toggle.png" alt="Toggle" class="sidebar-icon" /></li>
+            <li class="menu-title"></li>
+            <li><img src="icons/dashboard.png" alt="Dashboard" class="sidebar-icon" /></li>
+            <li><img src="icons/application-list.png" alt="App List" class="sidebar-icon" /></li>
+            <li><img src="icons/approver-inbox.svg" alt="Inbox" class="sidebar-icon" /></li>
+            <li><img src="icons/invite-business-partner.svg" alt="Invite Partner" class="sidebar-icon" /></li>
+            <li><img src="icons/business-partner-list.png" alt="Partner List" class="sidebar-icon" /></li>
+            <li class="menu-title1"></li>
+            <li><img src="icons/actyv-score.svg" alt="score" class="sidebar-icon" /></li>
+            <li><img src="icons/enterprise-score-comparison.svg" alt="score-compariosn" class="sidebar-icon" /></li>
+            <li class="menu-title2"></li>
+            <li><img src="icons/people.png" alt="user-management" class="sidebar-icon" /></li>
+            <li><img src="icons/role-management.svg" alt="role-management" class="sidebar-icon" /></li>
+            <li><img src="icons/territory.png" alt="territory" class="sidebar-icon" /></li>
+        </ul>
+    </aside>
+    <main class="main-content">
+    <div class="page-header">
+        <div class="back-arrow"><img src="icons/arrow-back.svg" alt=""></div>
+        <div>
+            <h2 class="title">Business Details</h2>
+            <p class="subtitle">Enter all Necessary Details related to Business Details</p>
+        </div>
+    </div>
+
+    <form class="business-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label class="main-title" for="incorporationDate">Date of Incorporation (Business Start Date)</label>
+                <input type="date" id="incorporationDate" name="incorporationDate">
+            </div>
+
+            <div class="form-group upload-section">
+                <label class="main-title">Shop and Establishment Certificate</label>
+                <div class="upload-box">
+                    <img src="icons/folder.png" alt="">
+                    <p id="upload">Click or drag file to this area to upload</p>
+                    <p id="upload-sub">File(s) supported: pdf,images(jpg,jpeg,png)</p>
+                    <input type="file" id="certificate" accept=".pdf,.jpg,.png">
+                    <label for="certificate" class="upload-btn">Choose File</label>
+                    <p id="upload-size">Maximum 5MB</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="main-title">Ownership of the Property (Office/Godown)</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="ownership" value="own"> Own</label>
+                    <label><input type="radio" name="ownership" value="rented"> Rented</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group full-width">
+            <label for="businessType" class="main-title">Business Type</label>
+            <select id="businessType" name="businessType">
+                <option value="">Select</option>
+                <option>Retail</option>
+                <option>Wholesale</option>
+                <option>Manufacturing</option>
+                <option>Service</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button type="submit" class="btn btn-primary">SAVE AND PROCEED</button>
+            <button type="button" class="btn btn-primary">SAVE AS DRAFT</button>
+        </div>
+    </form>
+</main>
+
+</body>
+</html>
